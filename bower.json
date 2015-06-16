@@ -1,22 +1,10 @@
 {
   "name": "number-trivia-canjs",
   "version": "0.0.0",
-  "homepage": "https://github.com/tolgaek/number-trivia-canjs",
-  "authors": [
-    "Tolga Ekmen <tolga.ekmen@gmail.com>"
-  ],
-  "description": "Simple canjs implementation",
-  "main": "index.html",
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
-    "jquery": "~2.1.4",
-    "canjs": "~2.2.6"
+    "require-can-renderers" : "git://github.com/retro/require-can-renderers.git",
+"requirejs" : "~2.1.11",
+    "canjs" : "~2.1.1",
+    "jquery" : "~2.1.1"
   }
 }
