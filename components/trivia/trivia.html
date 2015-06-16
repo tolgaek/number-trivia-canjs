@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Lets start with numbers</title>
+    <link rel="stylesheet" href="../../style/style.css" type="text/css">
+    <link rel="stylesheet" href="../../bower_components/foundation/css/foundation.css" type="text/css">
+  </head>
+  <body>
+  <nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Number Trivia</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+</nav>
+<br />
+<br />
+    <div id="content"></div>
+    <script type='text/javascript' src='../../bower_components/requirejs/require.js'></script>
+    <script type='text/javascript' src='../../bower_components/jquery/dist/jquery.js'></script>
+    <script type='text/javascript' src='../../bower_components/foundation/js/foundation.js'></script>
+    <script type='text/javascript' src='../../requirejsconfig.js'></script>
+    <script type='text/javascript'>
+      requirejs.config({
+          baseUrl : '../../'
+      })
+      requirejs(['components/trivia/trivia'], function(Trivia){
+        var template = can.view.mustache('<trivia hello="hello"></trivia>');
+        $('#content').html(template());
+        
+      })
+    </script>
+  </body>
+</html>
