@@ -6,6 +6,6 @@
     "requirejs": "~2.1.11",
     "canjs": "~2.1.1",
     "jquery": "~2.1.1",
-    "bootstrap": "~3.3.5"
+    "foundation": "~5.5.2"
   }
 }
