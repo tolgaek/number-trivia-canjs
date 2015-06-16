@@ -2,9 +2,10 @@
   "name": "number-trivia-canjs",
   "version": "0.0.0",
   "dependencies": {
-    "require-can-renderers" : "git://github.com/retro/require-can-renderers.git",
-"requirejs" : "~2.1.11",
-    "canjs" : "~2.1.1",
-    "jquery" : "~2.1.1"
+    "require-can-renderers": "git://github.com/retro/require-can-renderers.git",
+    "requirejs": "~2.1.11",
+    "canjs": "~2.1.1",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.3.5"
   }
 }
